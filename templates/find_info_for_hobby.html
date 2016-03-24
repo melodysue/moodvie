@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <h3><b style="color:red">{{ hobby }}</b>: Is that all you do?</h3>
+
+  <form action="http://www.google.com/search"
+        method="get">
+    <input type="text" name="q" value={{ hobby }} />
+    <input type="submit" value="Google Search" />
+  </form>
+
+{% endblock %}
+

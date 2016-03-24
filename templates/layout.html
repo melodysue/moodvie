@@ -1,0 +1,17 @@
+<!doctype html>
+
+<title>Hobby</title>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<div>
+  <h1>Hobby</h1>
+
+  {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
+  {% endfor %}
+
+  {% block body %}{% endblock %}
+  <br />
+  <a href="{{ url_for('index') }}">Home</a>
+</div>

@@ -1,0 +1,13 @@
+Alice Chang & Melody Sue
+Final CS 40 Project
+
+In the mood to watch a movie, but don’t know what to watch? Moodvie is here to save the day! Moodvie is a web app that lets you choose your mood, to select three random movies that are associated with that mood. Press refresh if you want another selection of random movies. If you want to watch one of these movies right away, scroll to the bottom of the page and press “Buy a Movie!” The button will lead you to the Amazon Prime Instant Videos page, where you can search and purchase your movie of choice.
+
+We did some leg work and created 2 text files. One text file (Movies.txt) lists different moods and the titles of films we choose that associated best with those moods. We selected these movies from IMDB’s website. The other text file (Titles.txt) includes detailed information about each film, including opening year, director, and 2 actors in the film. 
+
+We used Flask, Python, HTML, JS and CSS to create Moodvie. In Python, we read each text file and created 2 dictionaries. The dictionary created from Movies.txt looks like {‘Romantic’: [’Titanic’,’P.S. I Love You’,…],…}. The dictionary created from Titles.txt looks like {‘Titanic’: [‘2003’, ‘James Cameron’, ‘Leonardo DiCaprio’, ‘Kate Winslet’],…}. Depending on which Mood you choose, a tab will open that displays three random movies within that mood. We wrote a randomizer function that shows three random movies, found within the values related to the Mood (key).
+
+We also created a custom favicon (little icon that shows up in the tab next to the title of the page). Check it out!
+
+We hope you enjoy browsing all the different movies we’ve curated! Happy Moodvie.
+

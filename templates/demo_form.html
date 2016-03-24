@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <h2>using a form or two . . .</h2>
+  <form action="{{ url_for('hobby') }}" method=post>
+    <dl>
+      <dt><b>What is your hobby?</b>
+      <dd><input type=text name=hobby>
+      <dd><input type=submit value='Find Info'>
+    </dl>
+  </form>
+{% endblock %}

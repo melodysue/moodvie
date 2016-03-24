@@ -1,0 +1,155 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <link href="/static/msue.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script type ="text/javascript" src ="/static/Second.js"> </script>
+</head>
+
+<body>
+    <title>Moodvie</title>
+    <style>title { font-family: Ubuntu, sans-serif; }</style>
+
+    <div style="float:left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/static/film.png">
+    </div>
+    <div style="float:left">
+        <h1>Moodvie</h1>
+    </div>
+    <div style="clear:both"/>
+    
+    <hr>
+    <center><h2>Pick a Mood. Find a Movie!</h2></center>
+
+<hr>
+<hr>
+<br>
+
+<form>
+    <center>
+    <table>
+    <tr>
+        <td>
+        <!--
+        <input id =romantic type="button" value="romantic" onclick="go_to_results('romantic');">
+        <input type="button" name="b1" value="romantic" onclick="go_to_results('romantic');">
+        -->
+        <button class="button" id="cerebral"  onclick="pickGenre('Cerebral');">
+        <img src="/static/robot3.png">
+        Cerebral
+        </button>
+        </td>
+        
+        <td>
+        <button class="button" id="romantic" onclick="pickGenre('Romantic');">
+        <img src="/static/man293.png">
+        Romantic
+        </button>
+        </td>
+
+        <td>
+        <button class="button" id="dramatic" onclick="pickGenre('Dramatic');">
+        <img src="/static/theater3.png">
+        Dramatic
+        </button>
+        </td>
+        
+        <td>
+        <button class="button" id="adventurous" onclick="pickGenre('Adventurous');">
+        <img src="/static/rocket63.png">
+        Adventurous
+        </button>
+        </td>
+
+        <td>
+        <button class="button" id="mischievous" onclick="pickGenre('Mischievous');">
+        <img src="/static/spy2.png">
+        Mischievous
+        </button> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <button class="button" id="ahh!" onclick="pickGenre('Ahhh!!!');">
+        <img src="/static/death3.png">
+        <br>
+        Ahhh!!!
+        </button>
+        </td>
+        
+        <td>
+        <button class="button" id="nostalgic" onclick="pickGenre('Nostalgic');">
+        <img src="/static/film62.png">
+        Nostalgic
+        </button>
+        </td>
+        
+        <td>
+        <button class="button" id="goofy" onclick="pickGenre('Goofy');">
+        <img src="/static/clown4.png">
+        <br>
+        Goofy
+        </button>
+        </td>
+
+        <td>
+        <button class="button" id="thrill" onclick="pickGenre('Thrill');">
+        <img src="/static/park5.png">
+        <br>
+        Want a Thrill?
+        </button>
+        </td>
+        
+        <td>
+        <button class="button" id="creative" onclick="pickGenre('Creative');">
+        <img src="/static/paintbrush2.png">
+        Creative
+        </button>
+        </td>
+    </tr>
+
+    </table>
+    </center>
+</form>
+
+<hr>
+<form>
+<center>
+
+<h2>Movie Title &nbsp;&nbsp;<input name='title' value='Titanic' size='10'></input></h2>
+<p  />
+
+<h2>Year &nbsp;&nbsp;<input name='year' value='2003' size='5'></input></h2>
+<p  />
+
+<h2>Director &nbsp;&nbsp;<input name='director' value='James Cameron' size='15'></input></h2>
+<p  />
+
+<h2>Actor 1 &nbsp;&nbsp;<input name='actor1' value='Leonardo DiCaprio' size='15'></input></h2>
+<p  />
+
+<h2>Actor 2 &nbsp;&nbsp;<input name='actor2' value='Kate Winslet' size='15'></input></h2>
+<p  />
+
+<h2>Movie Mood &nbsp;&nbsp;<input name='mood' value='Romantic' size='10'></input></h2>
+<p  />
+
+<input type="button" value="Add This Movie" onclick="addMovieToMood(); addMovieInfo();" >
+</center>
+</form>
+
+<br><br></br></br>
+<hr />
+<b>This page was created by Melody Sue and Alice Chang</b>
+<div>Icons made by Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+
+
+<hr />
+</body>
+
+</html>

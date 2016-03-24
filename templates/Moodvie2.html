@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <link href="/static/msue.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script type ="text/javascript" src ="/static/Moodvie.js"> </script>
+ </head>
+ 
+ <body>   
+    <title>Moodvie</title>
+    <style>title { font-family: Ubuntu, sans-serif; }</style>
+
+    <div style="float:left">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/static/film.png">
+    </div>
+    <div style="float:left">
+        <h1>Moodvie</h1>
+    </div>
+    <div style="clear:both"/>
+    
+
+    <hr>
+    <center><h2>Here is a random selection:</center></h2>
+
+<hr>
+<hr>
+
+    <h1>{{title}}</h1>
+
+
+    {% for movie in movies %}
+    <p class='movie_information'>
+    <h3> Movie title: {{ movie }} </h3>
+        {% for item in movieData[movie] %}
+            {% if loop.first %}
+                <p>Movie Year:&nbsp{{ item }}</p>
+            {% elif loop.index0 == 1 %}
+                <p>Director:&nbsp{{ item }}</p>
+            {% else %}
+                <p>Actor:&nbsp{{ item }}</p>
+            {% endif %}
+        {% endfor %}
+    </p>
+    {% endfor %}
+    </br>
+
+
+    <input type="button" value="Buy a Movie!" class="button2"
+        onclick=location.href="http://www.amazon.com/movies-tv-dvd-bluray/b?ie=UTF8&node=2625373011">
+
+<hr />
+
+<b>This page was created by Melody Sue and Alice Chang.</b>
+
+<hr />
+</body>
+
+</html>
